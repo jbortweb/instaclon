@@ -16,7 +16,7 @@
       </h1>
       <nav class="fles gap-2 items-center">
         <a class="font-bold uppercase text-gray-600 text-sm pr-4" href="#">Entrar</a>
-        <a class="font-bold uppercase text-gray-600 text-sm" href="/crear-cuenta">Registrar</a>
+        <a class="font-bold uppercase text-gray-600 text-sm" href="{{route('register')}}">Registrar</a>
       </nav>
     </div>
   </header>
