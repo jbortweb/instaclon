@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -16,6 +19,10 @@ class RegisterController extends Controller
         // $request nos desvuelve toda la informacion del formaulario, con dd lo vemos en pantalla
 
 
+        //Modificar el request. El username se guarda como slug y hay que evitar su duplicado, al crear la migracion ya se señala como unique
+
+        $request->request->add(['username'=>Str::slug($request->username)]); //Str da directrices para guardar el nombre de usuario con espacios)
+
         //Validacion
 
         $this->validate($request, [
@@ -25,7 +32,16 @@ class RegisterController extends Controller
             'password' => 'required|confirmed|min:6'
         ]);
 
-        dd('Creando validacion..');
+        User::create([
+            'name'=> $request->name,
+            'username' => $request->username,
+             'email' => $request->email,
+             'password'=> Hash::make($request->password), //Hash encripta la contraseña
+        ]);
+
+        //Redireccionar al usuario
+
+        return redirect()->route('posts.index');
     }
 
 }
