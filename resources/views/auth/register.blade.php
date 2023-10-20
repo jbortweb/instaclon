@@ -74,7 +74,7 @@ Registrate en instaBort
           type="password"
           placeholder="Tu password"
           class="border p-3 w-full rounded-lg @error('password') border-red-500 @enderror"
-          value="{{old('password')}}"
+          
         >
       </div>
         @error('password')
@@ -90,7 +90,6 @@ Registrate en instaBort
           type="password"
           placeholder="Repite tu password"
           class="border p-3 w-full rounded-lg @error('password') border-red-500 @enderror"
-          value="{{old('password')}}"
         >
       </div>
         @error('password')
