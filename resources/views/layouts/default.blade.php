@@ -14,10 +14,28 @@
       <h1 class="text-3xl font-black">
         InstaJBort
       </h1>
+
       <nav class="fles gap-2 items-center">
-        <a class="font-bold uppercase text-gray-600 text-sm pr-4" href="#">Entrar</a>
+        
+        @auth  <!-- Si esta autentificado sale este contenido -->
+        <a class="font-bold text-gray-600 text-sm pr-4" href="{{route('login')}}">
+          Hola:<span class="font-normal">{{auth()->user()->username}}</span>
+        </a>
+          <!-- Para cerrar sesion creamos un form para hacerlo de manera segura con la directiva csrf -->
+        <form action="{{route('logout')}}" method="POST">
+        @csrf
+        <button type="submit" class="font-bold uppercase text-gray-600 text-sm">Cerrar sesion</button>
+        </form>
+        @endauth
+
+        @guest <!-- Si no esta autentificado se ve este otro contenido -->
+        <a class="font-bold uppercase text-gray-600 text-sm pr-4" href="{{route('login')}}">Entrar</a>
         <a class="font-bold uppercase text-gray-600 text-sm" href="{{route('register')}}">Registrar</a>
+        @endguest
+        
+
       </nav>
+
     </div>
   </header>
 
