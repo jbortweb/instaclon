@@ -14,4 +14,8 @@ class PostController extends Controller
     public function index(User $user){ //Utilizamos el nombre del usuario en la url de las rutas, lo cogemos del modelo User
         return view("dashboard", ["user"=>$user]);
     }
+
+    public function create(){
+        return view("posts.create");
+    }
 }

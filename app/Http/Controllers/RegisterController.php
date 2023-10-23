@@ -46,7 +46,7 @@ class RegisterController extends Controller
 
         //Redireccionar al usuario
 
-        return redirect()->route('posts.index',['user'=>auth()->user()->username]);
+        return redirect()->route('posts.index',auth()->user()->username);
     }
 
 }
