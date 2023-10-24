@@ -12,8 +12,15 @@ class PostController extends Controller
     {
         $this->middleware("auth"); //Añadimos el constructor para que solo lleve a la vista dashboard a usuarios autentificados
     }
-    public function index(User $user){ //Utilizamos el nombre del usuario en la url de las rutas, lo cogemos del modelo User
-        return view("dashboard", ["user"=>$user]);
+    public function index(User $user){ 
+
+        $posts = Post::where('user_id', $user->id)->paginate(4);
+
+/*         Enviamos variables a la vista
+ */        return view("dashboard", [
+            "user"=>$user,
+            'posts' => $posts
+        ]);
     }
 
     public function create(){
