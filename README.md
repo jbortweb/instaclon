@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Instagram Clone - Desarrollado con Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Bienvenido al proyecto Instagram Clone, una réplica funcional de Instagram creada usando el framework Laravel. Este proyecto es una excelente muestra de cómo utilizar Laravel junto con tecnologías frontend modernas para replicar funcionalidades populares de redes sociales.
 
-## About Laravel
+## 🚀 Características
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Interfaz de Usuario Similar a Instagram**: Experimenta una interfaz de usuario y navegación que imita a Instagram.
+- **Publicación de Imágenes**: Los usuarios pueden subir y compartir imágenes al estilo de Instagram.
+- **Interacciones Sociales**: Funcionalidades para seguir a otros usuarios, así como para comentar y dar "me gusta" a las publicaciones.
+- **Gestión de Perfiles**: Los usuarios pueden crear y editar sus perfiles, añadiendo una biografía y una foto de perfil.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Tecnologías Utilizadas
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Laravel**: Utilizado para el backend y como API.
+- **Vite**: Empleado para mejorar la eficiencia del desarrollo frontend.
+- **Tailwind CSS**: Utilizado para estilos rápidos y responsivos que siguen las directrices de diseño moderno.
+- **Axios**: Facilita las solicitudes HTTP para interactuar con el backend de Laravel.
+- **Laravel Vite Plugin**: Integra Vite dentro del entorno de Laravel.
+- **Dropzone**: Implementado para la carga funcional y estilizada de imágenes.
+- **PostCSS**: Procesa el CSS con un enfoque en mejorar su eficacia.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚙️ Instalación
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Para poner en marcha el proyecto localmente, sigue estos pasos:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/quiosco.git
 
-## Laravel Sponsors
+# Navegar al directorio del proyecto
+cd quiosco
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+# Instalar dependencias de React
+npm install
 
-### Premium Partners
+# Compilar y correr el frontend
+npm run dev
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+# Navegar al directorio del backend de Laravel
+cd backend
 
-## Contributing
+# Instalar dependencias de PHP
+composer install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Iniciar el servidor
+php artisan serve
 
-## Code of Conduct
+```
+## 📄 Licencia
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-## Security Vulnerabilities
+## 📞 Contacto
+Puedes contactarme directamente a través de GitHub.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
